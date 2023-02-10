@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+
+:root {
+    --one:      #3d5a80;
+    --two:      #98c1d9;
+    --three:    #e0fbfc;
+    --four:     #ee6c4d;
+    --five:     #293241;
+}
+
+body {
+    margin: 0;
+}
+
+#nav-main {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh 30vw;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#nav-main > span:hover {
+    text-shadow: 2px 2px var(--four);
+    transition: 500ms;
+}
+
+#title {
+    font-family: "Rubik", sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+}
