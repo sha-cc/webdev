@@ -1,37 +1,69 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Inter");
 
 :root {
-    --one:      #3d5a80;
-    --two:      #98c1d9;
-    --three:    #e0fbfc;
-    --four:     #ee6c4d;
-    --five:     #293241;
+    --one:  #0081A7;
+    --two:  #00AFB9;
+    --three:#FDFCDC;
+    --four: #FED9B7;
+    --five: #F07167;
 }
 
-body {
+body, div {
     margin: 0;
+    padding: 0;
+}
+
+#main {
+    height: 100vh;
+    background-color: var(--three);
+    font-family: "Inter", sans-serif;
 }
 
 #nav-main {
     display: flex;
     justify-content: space-between;
-    margin: 5vh 30vw;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
+    margin: 0 28vw;
+    padding-top: 5vh;
     font-weight: 500;
-    text-transform: uppercase;
 }
 
-#nav-main > span:hover {
-    text-shadow: 2px 2px var(--four);
-    transition: 500ms;
+#nav-main > a {
+    text-decoration: none;
+    color: var(--one);
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    transition: 300ms;
+}
+
+#nav-main > a:hover {
+    color: var(--two);
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#text-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 60vw;
+    height: 60vh;
+    background-color: var(--four);
+    box-shadow: 10px 10px var(--one);
+    border-radius: 20px;
 }
 
 #title {
-    font-family: "Rubik", sans-serif;
-    font-size: 3em;
+    font-size: 5em;
     font-weight: 900;
     display: flex;
     justify-content: center;
+    color: var(--two);
+}
+
+#desc {
+    font-size: 2em;
+    padding: 0 3vw;
 }
