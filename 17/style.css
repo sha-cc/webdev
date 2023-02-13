@@ -1,12 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Inter&display=swap");
 
 :root {
-    --background:               #353535;
-    --navbar-link:              gray;
+    /* https://coolors.co/palette/ffcdb2-ffb4a2-e5989b-b5838d-6d6875 */
+    --one:                      #FFCDB2;
+    --two:                      #FFB4A2;
+    --three:                    #E5989B;
+    --four:                     #B5838D;
+    --five:                     #6D6875;
+
+    --background:               var(--one);
+    --about-background:         white;
+    --background-gradient:      linear-gradient(170deg, var(--one), var(--two), var(--three), var(--four), var(--five));
+    --navbar-link:              var(--four);
     --navbar-link-hover:        white;
-    --text-main-background:     lightgray;
-    --text-main-title:          black;
-    --text-main:                black;
+    --text-main-background:     rgba(255, 255, 255, 0.5);
+    --text-main-border:         2px solid rgba(255, 255, 255, 0.3);
+    --hero-img-border:          10px solid rgba(255, 255, 255, 0.8);
+    --text-main-shadow:         0px 0px 30px 30px rgba(0, 0, 0, 0.10);
+    --text-main-title:          rgba(255, 255, 255, 0.8);
+    --text-main:                var(--five);
 }
 
 body, div {
@@ -34,7 +46,7 @@ body, div {
 #nav-main > a {
     text-decoration: none;
     color: var(--navbar-link);
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: 2px;
     font-size: 1.5em;
     text-transform: uppercase;
@@ -53,22 +65,61 @@ body, div {
     left: 15%;
     width: 70vw;
     height: 100vh;
-    background-color: var(--text-main-background);
-    box-shadow: 0 0 5em;
-    border-radius: 10px;
+    background: var(--text-main-background);
+    border: var(--text-main-border);
+    box-shadow: var(--text-main-shadow);
+    backdrop-filter: blur(30px);
+    border-radius: 30px 30px 0 0;
+}
+
+#image {
+    margin-bottom: 5vh;
+}
+
+#hero-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+#hero-img > img {
+    width: 40vw;
+    border-radius: 30px;
+    border: var(--hero-img-border);
 }
 
 #title {
-    font-size: 10em;
+    position: absolute;
+    font-size: 7em;
     font-weight: 1000;
     display: flex;
     justify-content: center;
+    width: 30vw;
     color: var(--text-main-title);
-    margin: 10vh;
+    background-color: var(--five);
+    margin: -8vh 0 0 30px;
+    border-radius: 30px 0 30px 0;
+    box-shadow: 10px 10px white;
+    backdrop-filter: blur(30px);
 }
 
 #desc {
     font-size: 2em;
+    margin-top: 10vh;
     padding: 0 5vw;
     color: var(--text-main);
+}
+
+#about-main {
+    margin: 0 20vw;
+    font-family: "Inter", sans-serif;
+}
+
+#about-title {
+    margin-top: 10vh;
+    font-size: 5em;
+}
+
+#about-text {
+    font-size: 1.5em;
 }
