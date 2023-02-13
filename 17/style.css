@@ -9,13 +9,11 @@
     --five:                     #6D6875;
 
     --background:               var(--one);
-    --about-background:         white;
-    --background-gradient:      linear-gradient(170deg, var(--one), var(--two), var(--three), var(--four), var(--five));
+    --img-border:          10px solid rgba(255, 255, 255, 0.8);
     --navbar-link:              var(--four);
     --navbar-link-hover:        white;
     --text-main-background:     rgba(255, 255, 255, 0.5);
     --text-main-border:         2px solid rgba(255, 255, 255, 0.3);
-    --hero-img-border:          10px solid rgba(255, 255, 255, 0.8);
     --text-main-shadow:         0px 0px 30px 30px rgba(0, 0, 0, 0.10);
     --text-main-title:          rgba(255, 255, 255, 0.8);
     --text-main:                var(--five);
@@ -29,14 +27,13 @@ body, div {
 #main {
     height: 100vh;
     background-color: var(--background);
-    font-family: "Inter";
+    font-family: "Inter", sans-serif;
 }
 
 #nav-main {
     display: flex;
     justify-content: center;
     padding-top: 5vh;
-    font-weight: 500;
 }
 
 #nav-main > a + a {
@@ -85,7 +82,7 @@ body, div {
 #hero-img > img {
     width: 40vw;
     border-radius: 30px;
-    border: var(--hero-img-border);
+    border: var(--img-border);
 }
 
 #title {
