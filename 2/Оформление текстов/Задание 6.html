@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Задание 6</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #main {
+            display: grid;
+            width: 100vw;
+            margin: 0 20vw;
+        }
+
+        #one, #two, #three {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #one    {   text-align: left;     }
+        #two    {   text-align: center;   }
+        #three  {   text-align: right;    }
+
+        .one-1, .two-1, .two-6, .three-6    {   font-size: 3em;     }
+        .one-2, .two-2, .two-5, .three-5    {   font-size: 2.6em;   }
+        .one-4, .two-3, .three-3            {   font-size: 2.1em;   }
+        .one-5, .two-4, .three-2            {   font-size: 2em;     }
+        .one-6, .two-3, .three-1            {   font-size: 1.6em;   }
+        .one-3, .three-4                    {   font-size: 2.2em;   }
+
+        .one-1, .two-3, .two-4, .three-4    {   color: blue;        }
+        .one-3, .two-1, .two-2, .three-1    {   color: red;         }
+        .one-5, .two-5, .two-6              {   color: lime;        }
+        .one-6, .three-5                    {   color: brown;       }
+        .three-3                            {   color: olivedrab;   }
+        .three-2                            {   color: yellow;      }
+        .three-6                            {   color: darkmagenta; }
+        .one-2                              {   color: orange;      }
+        .one-4                              {   color: cyan;        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <!-- 3 - 1 - 2, since I'm counting right-to-left, not top-to-bottom -->
+        <div id="three">
+            <span class="three-1">П</span><span class="three-2">р</span><span class="three-3">и</span><span class="three-4">в</span><span class="three-5">е</span><span class="three-6">т</span>
+        </div>
+        <div id="one">
+            <span class="one-1">П</span><span class="one-2">р</span><span class="one-3">и</span><span class="one-4">в</span><span class="one-5">е</span><span class="one-6">т</span>
+        </div>
+        <div id="two">
+            <span class="two-1">П</span><span class="two-2">р</span><span class="two-3">и</span><span class="two-4">в</span><span class="two-5">е</span><span class="two-6">т</span>
+        </div>
+    </div>
+</body>
+</html>
