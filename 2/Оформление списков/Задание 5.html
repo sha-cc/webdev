@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <title>Задание 5</title>
+    <style>
+        body, #main, #title {
+            display: flex;
+            justify-content: center;
+        }        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        #main {
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.5em;
+            background-color: #cdffcc;
+        }
+        #title {
+            color: brown;
+            font-weight: bold;
+        }
+        .child-list {
+            list-style: disc;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="title">Прикладные программы</div>
+        <ol>
+            <li>Текстовые редакторы</li>
+            <li>Графические редакторы</li>
+            <li>Электронные таблицы</li>
+            <li>
+                Системы компьютерной математики:
+                <ul class="child-list">
+                    <li>Mathematica</li>
+                    <li>MathCad</li>
+                    <li>Maple</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>

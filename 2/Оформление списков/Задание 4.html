@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>Задание 4</title>
+    <style>
+        body, #main, #title, .title-secondary {
+            display: flex;
+            justify-content: center;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            align-items: center;
+        }
+        #main {
+            flex-direction: column;
+            width: 25vw;
+            font-size: 1.5em;
+            background-color: #dbeef4;
+            padding: 0 3vw;
+        }
+        #title, .title-secondary {
+            font-weight: bold;
+        }
+        #title {
+            color: blue;
+            font-size: 1.7em;
+            margin-bottom: 2vh;
+        }
+        .title-secondary {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="title">Разделы математики</div>
+        <div class="title-secondary">Алгебра</div>
+        <ul>
+            <li>Тригонометрия</li>
+            <li>Логарифмы</li>
+            <li>Дроби</li>
+        </ul>
+        <div class="title-secondary">Геометрия</div>
+        <ul>
+            <li>Планиметрия</li>
+            <li>Стереометрия</li>
+        </ul>
+    </div>
+</body>
+</html>
