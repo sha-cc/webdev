@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Задание 6</title>
+    <style>
+        body, #main, #title {
+            display: flex;
+            justify-content: center;
+        }        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        ol, ul {
+            margin: 0 0 2vh 3vw;
+        }
+        #main {
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.5em;
+        }
+        #bg {
+            background-color: #feff99;
+            padding: 0 5vw;
+        }
+        #title {
+            color: red;
+            font-weight: bold;
+            font-size: 1.7em;
+        }
+        .title-secondary {
+            font-weight: bold;
+            color: blue;
+            margin-left: 2vw;
+            /* override */
+            align-items: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="bg">
+            <div id="title">Города Беларуси</div>
+            <div class="title-secondary">Витебская область</div>
+            <ol style="list-style-type: upper-latin;">
+                <li>Витебск</li>
+                <li>Полоцк</li>
+            </ol>
+            <div class="title-secondary">Минская область</div>
+            <ol style="list-style-type: upper-roman;">
+                <li>Минск</li>
+                <li>Борисов</li>
+            </ol>
+            <div class="title-secondary">Гродненская область</div>
+            <ol style="list-style-type: lower-alpha;">
+                <li>Гродно</li>
+                <li>Лида</li>
+            </ol>
+            <div class="title-secondary">Могилевская область</div>
+            <ol>
+                <li>Могилев</li>
+                <li>Горки</li>
+            </ol>
+            <div class="title-secondary">Брестская область</div>
+            <ol style="list-style-type: lower-roman;">
+                <li>Брест</li>
+                <li>Пинск</li>
+            </ol>
+            <div class="title-secondary">Гомельская область</div>
+            <ul>
+                <li>Гомель</li>
+                <li>Мозырь</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
