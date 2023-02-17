@@ -9,7 +9,7 @@
     --five:                     #6D6875;
 
     --background:               var(--one);
-    --img-border:          10px solid rgba(255, 255, 255, 0.8);
+    --img-border:               10px solid rgba(255, 255, 255, 0.8);
     --navbar-link:              var(--four);
     --navbar-link-hover:        white;
     --text-main-background:     rgba(255, 255, 255, 0.5);

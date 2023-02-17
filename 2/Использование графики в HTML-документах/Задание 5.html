@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Задание 5</title>
+    <style>
+        body, #main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+        #main > div + div {
+            margin-top: 1vw;
+        }
+        .line {
+            width: 70vw;
+            height: 5vh;
+        }
+        .red        { background-color: #c80000; }
+        .orange     { background-color: #ff3301; }
+        .yellow     { background-color: #ffff00; }
+        .green      { background-color: #009800; }
+        .cyan       { background-color: #31ffcc; }
+        .blue       { background-color: #000196; }
+        .magenta    { background-color: #990064; }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="red line"></div>
+        <div class="orange line"></div>
+        <div class="yellow line"></div>
+        <div class="green line"></div>
+        <div class="cyan line"></div>
+        <div class="blue line"></div>
+        <div class="magenta line"></div>
+    </div>
+</body>
+</html>
