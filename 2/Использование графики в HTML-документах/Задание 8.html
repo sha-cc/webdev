@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Задание 8</title>
+    <style>
+        body, #main {
+            display: flex;
+            justify-content: center;
+        }
+        body {
+            margin: 0;
+            height: 100vh;
+            align-items: center;
+        }
+        #main {
+            width: 800px;
+            height: 500px;
+
+            flex-direction: column;
+            background-image: url("sources/img_4.jpg");
+            background-repeat: no-repeat;
+            font-size: 1.3em;
+        }
+        /* horrible margin hacks ahead */
+        .title {
+            color: blue;
+            font-size: 2em;
+            text-align: center;
+            margin-top: -28%;
+        }
+        .image-angel {
+            margin-top: -5%;
+        }
+        .image-angel > img {
+            width: 100px;
+        }
+        .image-globe {
+            position: absolute;
+            height: inherit;
+        }
+        .image-globe > img {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 class="title">Летающий ангел</h1>
+        <marquee class="image-angel"><img src="sources/img_5.gif"></marquee>
+        <p>Используя возможности HTML-языка можно заставить летать ангела по странице.</p>
+        <p>И не только ангела...</p>
+        <marquee class="image-globe" direction="up"><img src="sources/img_6.gif"></marquee>
+    </div>
+</body>
+</html>

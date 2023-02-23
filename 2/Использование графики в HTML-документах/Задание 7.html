@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <title>Задание 5</title>
+    <title>Задание 7</title>
     <style>
         body, #main {
             display: flex;
@@ -12,17 +12,26 @@
             margin: 0;
             height: 100vh;
         }
+        #main {
+            font-size: 1.5em;
+            text-align: center;
+            line-height: 1.5em;
+        }
+        #image > img {
+            height: 180px;
+        }
     </style>
 </head>
 <body>
     <div id="main">
-        <div class="title">Ёлочка</div>
-        В лесу родилась елочка, <br>
+        <b style="color: blue">Елочка</b>
+        <!-- Has to be wrapped in div, or else gets treated as two separate strings -->
+        <div><b style="color: red">В</b> лесу родилась елочка,</div>
         В лесу она росла. <br>
         Зимой и летом стройная, <br>
         Зеленая была. <br>
-        <div id="image-center"><img src="" alt=""></div>
-        Метель ей пела песенку: <br>
+        <div id="image"><img src="sources/img_3.jpg" alt="Ёлка"></div>
+        <div><b style="color: blue">М</b>етель ей пела песенку:</div>
         - Спи, елочка, бай-бай. <br>
         Мороз снежком укутывал: <br>
         - Смотри, не замерзай.
