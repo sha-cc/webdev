@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Задание 9</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #main {
+            width: 63%;
+            height: 73%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            background-image: url("sources/img_3.jpg");
+        }
+        .item-1, .item-3 {
+            grid-column: 3 / 4;
+        }
+        .item-1 { 
+            grid-row: 1 / 2;
+            font-size: 2.5em;
+            color: white;
+        }
+        .item-2, .item-3, .item-4 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            font-size: 5em;
+        }
+        .item-2 {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        .item-2 > div, .item-3 > div, .item-4 > div {
+            position: absolute;
+            z-index: 0;
+        }
+        .item-3 {
+            grid-column: 3 / 4;
+            grid-row: 2 / 3;
+        }
+        .item-4 {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="item-1">Новое предложение от BMW. <br> Старые машины по новым ценам.</div>
+        <div class="item-2">
+            <img width="400px" height="250px" src="sources/img_4.jpg">
+            <div><s>50 000</s><br>30 000</div>
+        </div>
+        <div class="item-3">
+            <img width="400px" height="250px" src="sources/img_5.jpg">
+            <div><s>30 000</s><br>25 000</div>
+        </div>
+        <div class="item-4">
+            <img width="400px" height="250px" src="sources/img_6.jpg">
+            <div><s>45 000</s><br>35 000</div>
+        </div>
+    </div>
+</body>
+</html>

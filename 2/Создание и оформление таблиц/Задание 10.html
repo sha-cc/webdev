@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Задание 10</title>
+    <style>
+        html, #main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        html {
+            margin: 0;
+            height: 100vh;
+        }
+        table {
+            width: 900px;
+            height: 500px;
+        }
+        marquee {
+            height: 500px;
+        }
+        #main {
+            font-size: 30px;
+            padding: 30px;
+            background-color: #deffee;
+            flex-direction: column;
+        }
+        #title {
+            font-size: 1em;
+            color: blue;
+        }
+        .main-table, .main-tr, .main-tr > td {
+            border: 3px solid white;
+            border-collapse: collapse;
+        }
+        .wall {
+            background-color: #b05026;
+            width: 45%;
+        }
+        .elevator-shaft {
+            background-color: #c0c0c0;
+        }
+        .glass {
+            border: 2px solid gray;
+            background-color: white;
+        }
+        .window, .elevator {
+            width: 120px;
+            border: 3px solid black;
+            background-color: gray;
+        }
+        .window {
+            margin: 0 auto;
+            height: 120px;
+        }
+        .elevator {
+            height: 165px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1 id="title">Это дом</h1>
+        <table class="main-table">
+            <tr class="main-tr">
+                <td class="wall">
+                    <table class="window">
+                        <tr>
+                            <td class="glass" rowspan="2"></td>
+                            <td class="glass"></td>
+                        </tr>
+                        <tr>
+                            <td class="glass"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="elevator-shaft" rowspan="3">
+                    <marquee behavior="alternate" direction="up">
+                        <table class="elevator">
+                            <tr>
+                                <td class="glass"></td>
+                                <td class="glass"></td>
+                                <td class="glass"></td>
+                            </tr>
+                            <tr>
+                                <td class="glass" colspan="3"></td>
+                            </tr>
+                        </table>
+                    </marquee>
+                </td>
+                <td class="wall">
+                    <table class="window">
+                        <tr>
+                            <td class="glass" rowspan="2"></td>
+                            <td class="glass"></td>
+                        </tr>
+                        <tr>
+                            <td class="glass"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="main-tr">
+                <td class="wall">
+                    <table class="window">
+                        <tr>
+                            <td class="glass" rowspan="2"></td>
+                            <td class="glass"></td>
+                        </tr>
+                        <tr>
+                            <td class="glass"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="wall">
+                    <table class="window">
+                        <tr>
+                            <td class="glass" rowspan="2"></td>
+                            <td class="glass"></td>
+                        </tr>
+                        <tr>
+                            <td class="glass"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr class="main-tr">
+                <td class="wall">
+                    <table class="window">
+                        <tr>
+                            <td class="glass" rowspan="2"></td>
+                            <td class="glass"></td>
+                        </tr>
+                        <tr>
+                            <td class="glass"></td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="wall">
+                    <table class="window">
+                        <tr>
+                            <td class="glass" rowspan="2"></td>
+                            <td class="glass"></td>
+                        </tr>
+                        <tr>
+                            <td class="glass"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

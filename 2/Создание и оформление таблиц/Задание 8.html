@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Задание 8</title>
+    <style>
+        html {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ol, ul {
+            width: 100%;
+        }
+        img {
+            width: 150px;
+        }
+        #main {
+            display: grid;
+            align-items: start;
+            gap: 10px;
+            width: 40vw;
+            font-size: 20px;
+        }
+        #main > * {
+            text-align: justify;
+        }
+        .item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .item-1, .item-3, .item-5 {
+            grid-column: 1 / 2;
+        }
+        .item-2, .item-4, .item-6 {
+            grid-column: 2 / 3;
+        }
+        .item-5 > ul, .item-6 > ul {
+            width: 90%;
+        }
+        .item-3 > .title-red {
+            margin-bottom: -150px;
+        }
+        .item-6 {
+            padding-left: 40px;
+        }
+        .title-red, .title-blue {
+            font-size: 1em;
+        }
+        .title-red {
+            color: red;
+        }
+        .title-blue {
+            color: blue;
+            text-decoration: underline;
+        }
+        /* https://stackoverflow.com/questions/1632005/ordered-list-html-lower-alpha-with-right-parentheses */
+        .italicized-list {
+            font-style: italic;
+            counter-reset: list;
+        }
+        .italicized-list > li {
+            list-style: none;
+        }
+        .italicized-list > li:before {
+            content: counter(list, decimal) ") ";
+            counter-increment: list;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="item-1">
+            <h1 class="title-red">Правила поведения в кабинете</h1>
+            <ol>
+                <li>При входе в кабинет не толкаться в дверях, спокойно занимать свое рабочее место, ничего не трогать на столе.</li>
+                <li>В кабинете запрещается находиться в верхней одежде.</li>
+                <li>В кабинете запрещается находиться без преподавателя.</li>
+            </ol>
+        </div>
+        <div class="item-2">
+            <h1 class="title-red">В кабинете запрещено:</h1>
+            <div>
+                <ol class="italicized-list">
+                    <li>Трогать разъемы соединительных проводов;</li>
+                    <li>Прикасаться к проводам питания;</li>
+                    <li>Прикасаться к экрану и задней стенке монитора;</li>
+                    <li>Размещать принадлежности на составных блоках компьютера.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="item-3">
+            <h1 class="title-red">Обязанности учащегося</h1>
+        </div>
+        <div class="item-4">
+            <img src="sources/img_2.png">
+        </div>
+        <div class="item-5">
+            <h1 class="title-blue">перед началом работы на ПК:</h1>
+            <ul>
+                <li>Убедитесь в отсутствии видимых неисправностей, в случае их обнаружения сообщить преподавателю;</li>
+                <li>Записать в журнале учета дату и время начала работы, свою фамилию и замеченные перед началом работ неисправности.</li>
+            </ul>
+        </div>
+        <div class="item-6">
+            <h1 class="title-blue">по окончании работы на ПК:</h1>
+            <ul style="list-style: circle;">
+                <li>Привести свое рабочее место в порядок;</li>
+                <li>Выключить компьютер;</li>
+                <li>Записать в журнале учета время окончания работы;</li>
+                <li>Сдать преподавателю выданные для работы материалы и пособия.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
