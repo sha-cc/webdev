@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Задание 8</title>
+    <style>
+        html, #main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        html {
+            margin: 0;
+            height: 100vh;
+            font-size: 30px;
+        }
+        #top {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            width: 90%;
+        }
+        .image, .text {
+            grid-row: 1;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+        .underline-big, .underline-small {
+            border-bottom: 2px solid black;
+            display: inline;
+            height: 1em;
+            margin: 0;
+        }
+        .underline-big {
+            width: 150px;
+        }
+        .underline-small {
+            width: 30px;
+        }
+        #title {
+            font-size: 1em;
+            color: red;
+            margin: 10px 0;
+        }
+        table, tr, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        th {
+            color: blue;
+            background-color: #92cddb;
+        }
+        td {
+            background-color: #dbeef4;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="top">
+            <img class="image" src="../sources/img_3.jpg" width="200px">
+            <div class="text">
+                <p>УТВЕРЖДАЮ</p>
+                <p>Директор</p>
+                <p><div class="underline-big"></div>И.И.Иванов</p>
+                <p>"<div class="underline-small"></div>"<div class="underline-big"></div>20<div class="underline-small"></div>г.</p>
+            </div>
+        </div>
+        <h1 id="title">Расчетная ведомость на выдачу заработной платы за март 2004г.</h1>
+        <table>
+            <tr>
+                <th>Фамилия</th>
+                <th>Должность</th>
+                <th>Коэффициент</th>
+                <th>Начисленная зарплата</th>
+            </tr>
+            <tr>
+                <td>Веригин</td>
+                <td>Инженер</td>
+                <td>12,7</td>
+                <td>152000</td>
+            </tr>
+            <tr>
+                <td>Лисицина</td>
+                <td>Лаборант</td>
+                <td>10,4</td>
+                <td>256000</td>
+            </tr>
+            <tr>
+                <td>Жигалин</td>
+                <td>Конструктор</td>
+                <td>13,5</td>
+                <td>137000</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
